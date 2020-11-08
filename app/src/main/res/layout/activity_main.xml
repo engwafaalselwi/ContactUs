@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0DC7DF"
+            android:minHeight="@android:dimen/notification_large_icon_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="65dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="137dp"
+        android:layout_height="121dp"
+        android:src="@drawable/w"
+        app:civ_border="true"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="100sp"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="250dp"
+        android:text="Wafaa Alselwi"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:textColor="@color/colorgray"
+        android:text="App Developer"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="246dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="262dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonMessage1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_message_24" />
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:text="Messages"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <Button
+                android:id="@+id/buttonEmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_message_24" />
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="Email"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <Button
+                android:id="@+id/buttonCall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_message_24" />
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="Call"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="166dp"
+            android:layout_height="283dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonMap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_message_24" />
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="Map"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+            <Button
+                android:id="@+id/buttonGitHub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_message_24" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="GitHub"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/ic_baseline_message_24" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:text="Name"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
